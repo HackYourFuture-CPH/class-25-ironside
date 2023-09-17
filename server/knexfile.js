@@ -1,0 +1,32 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.config = void 0;
+require('dotenv').config();
+exports.config = {
+    development: {
+        client: 'postgres',
+        connection: {
+            host: process.env.DB_HOST,
+            database: process.env.DB,
+            user: process.env.DB_USER,
+            password: process.env.DB_PASSWORD
+        },
+        pool: {
+            min: 2,
+            max: 10
+        },
+    },
+    production: {
+        client: 'postgres',
+        connection: {
+            host: process.env.PROD_DB_HOST,
+            database: process.env.PROD_DB,
+            user: process.env.PROD_DB_USER,
+            password: process.env.PROD_DB_PASSWORD
+        },
+        pool: {
+            min: 2,
+            max: 10
+        },
+    }
+};
