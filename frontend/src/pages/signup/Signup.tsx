@@ -105,6 +105,7 @@ export default function SignUpPage() {
                         id="outlined-required"
                         label="Last Name"
                         variant="outlined"
+                        required
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
                         sx={{
@@ -136,11 +137,11 @@ export default function SignUpPage() {
                   </div>
 
                   <div className="label-wrap">
-                    <InputLabel className="label">Email</InputLabel>
+                    <InputLabel className="label">Password</InputLabel>
                     <TextField
                       name="email"
                       id="outlined-required"
-                      label="Enter email"
+                      label="Enter password"
                       variant="outlined"
                       type="password"
                       value={password}
@@ -159,7 +160,7 @@ export default function SignUpPage() {
                     <TextField
                       name="email"
                       id="outlined-required"
-                      label="Enter email"
+                      label="Confirm Password"
                       variant="outlined"
                       type="password"
                       value={passwordConfirm}
@@ -202,64 +203,4 @@ export default function SignUpPage() {
       </Box>
     </>
   );
-}
-
-{
-  /* <div>
-<div>
-  <h2>Sign Up</h2>
-  {error && <p>{error}</p>}
-  <form onSubmit={handleSubmit}>
-    <div>
-      <label>Email</label>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-    </div>
-    <div>
-      <label>Password</label>
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-    </div>
-    <div>
-      <label>Password Confirmation</label>
-      <input
-        type="password"
-        value={passwordConfirm}
-        onChange={(e) => setPasswordConfirm(e.target.value)}
-        required
-      />
-    </div>
-    <div>
-      <label>First Name:</label>
-      <input
-        type="text"
-        value={firstName}
-        onChange={(e) => setFirstName(e.target.value)}
-      />
-    </div>
-    <div>
-      <label>Last Name:</label>
-      <input
-        type="text"
-        value={lastName}
-        onChange={(e) => setLastName(e.target.value)}
-      />
-    </div>
-    <button disabled={loading} type="submit">
-      Sign Up
-    </button>
-  </form>
-</div>
-</div>
-<div>
-Already have an account? <Link to="/login">Log In</Link>
-</div> */
 }
