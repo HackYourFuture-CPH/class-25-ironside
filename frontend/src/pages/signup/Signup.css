@@ -1,0 +1,77 @@
+.signup-container {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.name-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.label-wrap {
+  display: flex;
+  width: 125px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.label {
+  color: var(--text-60, #55555f);
+  text-align: center;
+  /* Extra Small/Semibold */
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0.24px;
+}
+
+.signupImage {
+  width: 496px;
+  height: 482px;
+  flex-shrink: 0;
+}
+.signup-column {
+  order: 1;
+}
+
+.image-column {
+  order: 2;
+}
+.btn {
+    background-color:#0B5FAE;
+    color: white;
+    padding: 10px 32px;
+    width:274px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    margin-bottom:20px; 
+}
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .signup-column {
+    order: 2; /* Swap order for smaller screens */
+  }
+
+  .image-column {
+    order: 1; /* Swap order for smaller screens */
+  }
+  .signupImage {
+    width: 340px;
+    height: 310px;
+  }
+}
+/* Media query for phones */
+@media (max-width: 480px) {
+  .signupImage {
+    width: 221px;
+    height: 240px;
+  }
+}
