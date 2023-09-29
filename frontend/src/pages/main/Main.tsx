@@ -13,27 +13,29 @@ function Main() {
   };
 
   return (
-    <section className='grid-container'>
-      <button className={`toggle-button ${showNav ? 'hidden' : ''}`} onClick={toggleNav}>
-        <img src={menu} alt='menu' />
-      </button>
+    <div>
+      <section className='grid-container'>
+        <button className={`toggle-button ${showNav ? 'hidden' : ''}`} onClick={toggleNav}>
+          <img src={menu} alt='menu' />
+        </button>
 
-      <nav className={`nav ${showNav ? 'nav-show' : ''}`}>
-        <NavBar />
-      </nav>
+        <nav className={`nav ${showNav ? 'nav-show' : ''}`}>
+          <NavBar />
+        </nav>
 
-      <div className='header-outlet-container'>
-        <div className='grid-display'>
-          <header className='header'>
-            <Header />
-          </header>
+        <div className='header-outlet-container'>
+          <div className='grid-display'>
+            <header className='header'>
+              <Header />
+            </header>
 
-          <div className='outlet'>
-            <Outlet />
+            <div className='outlet'>
+              <Outlet />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
