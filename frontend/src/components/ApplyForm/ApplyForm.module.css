@@ -58,6 +58,11 @@
   width: 512px;
   min-height: 50px;
   background: #f8f9fd;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 8px;
 }
 .contactContainer .inputField {
   width: 512px;

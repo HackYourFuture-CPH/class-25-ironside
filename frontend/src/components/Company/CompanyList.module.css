@@ -1,0 +1,128 @@
+.content {
+  padding: 20px 0;
+}
+.cardContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: var(--font-primary);
+}
+.inputField {
+  width: 440px;
+  height: 49px;
+  border-radius: 8px;
+  border: 1px solid #f8f9fd;
+  font-family: 'Manrope';
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 16px 14px 16px;
+}
+.searchContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.searchBtn {
+  width: 168px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #0b5fae;
+  color: #ffffff;
+}
+.companyTitle .customLink {
+  color: #2b283d;
+  margin: 0;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.41px;
+  text-decoration: none;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  align-items: self-start;
+  padding: 20px;
+  gap: 20px;
+  height: auto;
+}
+
+.logoTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  font-family: var(--font-text);
+  color: var(--font-color);
+  font-size: 18px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.description {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: var(--font-text);
+}
+
+.location {
+  color: var(--font-color);
+  font-size: 16px;
+  font-family: var(--font-text);
+}
+
+@media (max-width: 800px) {
+  .cardContent {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .inputField {
+    width: calc(100% - 32px);
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .searchBtn {
+    width: calc(100% - 32px);
+    height: 45px; /* Adjust border radius */
+    background-color: #0b5fae;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+@media (min-width: 750px) and (max-width: 960px) {
+  .cardContent {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .inputField {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .searchBtn {
+    width: 100%;
+  }
+
+  .cardContainer {
+    height: auto;
+  }
+
+  .searchContainer {
+    flex-direction: column;
+  }
+}

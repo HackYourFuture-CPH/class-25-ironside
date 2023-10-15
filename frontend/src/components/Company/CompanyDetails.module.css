@@ -1,0 +1,85 @@
+.companyDetailWrapper {
+  display: flex;
+  padding: 2.5rem;
+  margin: 0.5rem;
+  width: 100%;
+  gap: 1rem;
+}
+.leftContainer {
+  flex: 3;
+}
+.rightContainer {
+  flex: 1;
+  width: 100%;
+}
+.companyDetailHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background: #ffffff;
+}
+.map {
+  width: 500px;
+  height: 500px;
+}
+.companyDetailMainContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background: #ffffff;
+  margin-top: 25px;
+}
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.companyJob {
+  margin-left: 1rem;
+}
+.jobType {
+  display: flex;
+  gap: 10px;
+}
+.jobListContainer {
+  width: 100%;
+}
+.jobList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  border-bottom: 1px solid #f1f2f4;
+  height: 60px;
+  margin-top: 10px;
+}
+.jobName {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.jobDescription {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.jobDetailMainContainer {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.jobSubhead {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}

@@ -3,10 +3,33 @@ import db from '../../config/db-config';
 
 export const getCompanies = async (req: Request, res: Response) => {
   try {
-    const companies = await db('companies').select('*');
+    const companies = await db('companies').select('*').where('status', 'approved');
     res.status(200).json(companies);
   } catch (error) {
     res.status(500).json({ error: 'Error fetching companies list' });
+  }
+};
+
+export const getCompaniesById = async (req: Request, res: Response) => {
+  const companyId = req.params.id;
+  try {
+    const company = await db('companies').where('id', companyId).first();
+    if (!company) {
+      return res.status(404).json({ message: 'Company not found' });
+    }
+    res.json(company);
+  } catch (error) {
+    res.status(500).json({ error: 'Error fetching company by id' });
+  }
+};
+
+export const getJobsByCompanyId = async (req: Request, res: Response) => {
+  const companyId = req.params.id;
+  try {
+    const jobs = await db('jobs').where('company_id', companyId);
+    res.json(jobs);
+  } catch (error) {
+    res.status(500).json({ error: 'Error fetching jobs for the company' });
   }
 };
 

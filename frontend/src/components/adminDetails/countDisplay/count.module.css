@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  min-width: 1200px;
   height: 100%;
   gap: 20px;
 }

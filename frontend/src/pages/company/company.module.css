@@ -1,0 +1,19 @@
+.content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 15px 400px auto;
+  grid-template-columns: auto;
+  grid-template-areas: 'top' 'mid' 'btm';
+}
+.main {
+  grid-area: mid;
+}
+
+/* @media screen and (max-width: 930px) {
+    .content {
+      grid-template-rows: 170px auto auto;
+  
+      grid-template-areas: 'top' 'mid' 'btm';
+    }
+  } */
